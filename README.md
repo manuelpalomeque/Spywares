@@ -8,5 +8,5 @@ Keyloggesr programados en Python.
 
 Librerías de Python utilizadas:
 
-- datetime
-- pynput
+    Datetime
+    Pynput
