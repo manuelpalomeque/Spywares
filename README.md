@@ -4,3 +4,9 @@ Se organiza el repositorio en carpetas con cada uno de los malwares estudiados.
 
 
 #### 1) Keyloggers
+Keyloggesr programados en Python. 
+
+Librerías de Python utilizadas:
+
+- datetime
+- pynput
