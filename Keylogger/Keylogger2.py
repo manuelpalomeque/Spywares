@@ -56,3 +56,17 @@ def enviarMail(archivoConLosDatos):
     msg['From'] = 'ejemplo@hotmail.com'
     msg['To'] = 'ejemplo@hotmail.com'
     msg['Subject'] = 'Archivo con los Datos'
+
+    adjunto = open(archivoConLosDatos, 'r')
+
+    p = MIMEBase('application', 'octet-stream')
+    p.set_payload((adjunto).read())
+
+    p.add_header('Content-Disposition', "adjunto; filename= %s" % str(archivoConLosDatos))
+    msg.attach(p)
+
+    server = smtplib.SMTP('smtp.gmail.com: 587')
+    server.starttls()
+    server.login(msg['From'], password)
+    server.sendmail(msg['From'], msg['To'], msg.as_string())
+    server.quit()
