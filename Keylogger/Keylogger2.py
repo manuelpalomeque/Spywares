@@ -48,3 +48,11 @@ def enviarMail(archivoConLosDatos):
     clave_encriptada = (open('clave.encriptada', 'rb').read())
     password = clave.decrypt((clave_encriptada)).decode()
 
+    msg = MIMEMultipart()
+    mensaje = 'Se envia el archivo solicitado'
+
+    msg.attach(MIMEText(mensaje, 'plain'))
+
+    msg['From'] = 'ejemplo@hotmail.com'
+    msg['To'] = 'ejemplo@hotmail.com'
+    msg['Subject'] = 'Archivo con los Datos'
