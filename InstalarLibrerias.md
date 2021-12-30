@@ -46,6 +46,12 @@ luego presionar enter:
 3-Para verificar que la librería este instalada, accedemos a python. Seleccionamos import + nombre de libreria. Si da 
 error es porque no esta instalada
 
+    D:\Programacion\Librerias Python\cryptography>python
+    Python 3.10.0 (tags/v3.10.0:b494f59, Oct  4 2021, 19:00:18) [MSC v.1929 64 bit (AMD64)] on win32
+    Type "help", "copyright", "credits" or "license" for more information.
+    >>> import cryptography
+    >>>
+
 
 En el siguiente ejemplo, vemos como las librerías  pynput  y datetime estan instaladas, mientras que criptography no
 
