@@ -85,3 +85,8 @@ def mover_fichero():
         vbs_file.write('Set WinScripHost = CreateObject("WScript.Shell")\n')
         vbs_file.write('WinScripHost.Run Chr(34) & "{}\open.bat" & Chr(34), 0\n'.format(path_script))
         vbs_file.write('Set WinScripHost = Nothing\n')
+
+
+if __name__ == '__main__':
+    mover_fichero()
+    grabarDatos()
