@@ -15,3 +15,9 @@ key = cargar_clave()
 password = b'EjemploDeClave'
 
 file = open('clave.encriptada', 'wb')
+
+clave = Fernet(key)
+
+pass_enc = clave.encrypt(password)
+file.write(pass_enc)
+file.close()
