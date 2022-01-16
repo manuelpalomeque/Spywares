@@ -1,9 +1,9 @@
-# Spywares (en Progreso) 🔭
+# Spywares  🔭
 En este repositorio estudio la composicion y el funcionamiento de Spywares.
 Se organiza el repositorio en carpetas con cada uno de los malwares estudiados.
 
 
-#### 1) Keyloggers
+## 1) Keyloggers: ⌨️📧
 Keyloggers programados en Python. 
 
 A) El keylogger 1 es una version basica y requiere que en la PC este instalado Pyhton. 
