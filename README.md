@@ -10,13 +10,19 @@ A) El keylogger 1 es una version basica y requiere que en la PC este instalado P
 
 Librerías de Python utilizadas:
 
-    Datetime
-    Pynput
+    datetime
+    pynput
 
-B) Keylogger Version 2:
+B) Keylogger Version 2, se inicia automáticamente al arranque de Windows 10 y se envía 
+por email cada un determinado tiempo.
 
 Librerías de Python utilizadas:
 
-    Datetime
-    Pynput
-    Cryptography  
+    datetime
+    pynput
+    cryptography 
+    time
+    email
+    smtplib
+    getpass
+    os
