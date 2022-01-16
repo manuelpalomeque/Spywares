@@ -2,7 +2,7 @@
 
 A continuacion mostrare un ejemplo de como instalar librerias de Python.
 
-###Instalacion de libreria cryptography:
+### Instalación de librería cryptography:
 
 1- Descargar  fichero .whl :
         
@@ -21,7 +21,7 @@ error es porque no esta instalada
 
 En el siguiente ejemplo, vemos como las librerías  pynput  y datetime estan instaladas, mientras que criptography no
 
-    C:\Users\Manu>python
+    C:\Users\User1>python
     Python 3.10.0 (tags/v3.10.0:b494f59, Oct  4 2021, 19:00:18) [MSC v.1929 64 bit (AMD64)] on win32
     Type "help", "copyright", "credits" or "license" for more information.
     >>> import pynput

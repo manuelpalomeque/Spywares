@@ -27,3 +27,10 @@ Librerías de Python utilizadas:
     smtplib
     getpass
     os
+
+
+
+### ¿Como instalar librerías en Python?
+A continuación les dejo un pequeño tutorial de como instalar librerías:
+
+👉 https://github.com/manuelpalomeque/Spywares/blob/master/InstalarLibrerias.md 👈
